@@ -1,0 +1,358 @@
+html{
+    background-color: #FFF3DD;
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+h1{
+    font-family: 'Short Stack';
+    filter: drop-shadow(2px 2px 2px black);
+    color: #ECAA6E;
+    text-align: center;
+    font-size: 50px;
+    background-color: #936A4E;
+    padding: 5px;
+    
+}
+
+
+h2{
+    font-family: 'Architects Daughter';
+    color: #4E2A2A;
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+h3{
+    font-family: 'Short Stack';
+    background-color: #936A4E;
+    color: #ECAA6E;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    filter: drop-shadow(2px 2px 2px grey)
+        
+}
+
+p{
+    font-family: 'Architects Daughter';
+    font-size: 15px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+nav{
+    text-align: center;
+    padding: 5px;
+}
+
+nav ul{
+    background-color: #A9C57C;
+    padding: 2px;
+    
+}
+
+.navitem{
+    font-family: 'Amatic SC';
+    padding:10px;
+    font-size: 30px;
+    display:inline-block;
+    filter: drop-shadow(2px 2px 2px grey);
+}
+
+
+.navitem a{
+    text-decoration:none;
+    padding:5px;
+    color: #4E2A2A; 
+}
+
+.navitem:hover{
+    animation: navwiggle 1s infinite;
+}
+
+@keyframes navwiggle{
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-5deg);}
+    40% { transform: rotate(4deg);}
+    60% { transform: rotate(-3deg);}
+    80% { transform: rotate(2deg);}
+    100% { transform: rotate(-1deg);}
+}
+
+.navitem a:visited{
+    color: #4E2A2A;
+}
+
+.coffeeboys{
+    margin: 0 auto;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    background-color: #A9C57C; 
+}
+
+.coffeeboys1{
+    margin: 0 auto;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+.coffeeboys1 img{
+    background-color:#A9C57C;
+    border-radius: 30%;
+}
+
+.coffeeboys img, .coffeeboys1 img{
+    padding: 20px;
+    margin: 20px;
+}
+
+.esp{
+    animation: spin 10s ease-in-out infinite;
+}
+
+.press{
+    animation: spin 10s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.pour{
+    animation: spin 10s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+@keyframes spin{
+    0%{ transform: rotate(0deg);}
+    20%{transform: rotate(0deg);}
+    100%{transform:rotate(360deg);}
+
+}
+
+.steps{
+    font-family:'Architects Daughter';
+}
+
+.steps li{
+    list-style-type: circle;
+}
+
+.steps strong{
+    text-decoration: underline;
+}
+.espressopg, .frenchpresspg, .pouroverpg{
+    padding: 20px;
+    display: inline-flex;
+}
+
+.espressopg ul, .frenchpresspg ul, .pouroverpg ul{
+    margin: 0 auto;
+    font-size:15px;
+}
+
+@media (max-width: 800px){
+        .navitem{font-size:50px;
+            display:block;}
+        .navitem a{text-align:center;}
+        h1 {font-size: 60px;
+            padding:10px;}
+        h2 {font-size: 30px;
+            padding:10px;}
+        .espressopg, .frenchpresspg, .pouroverpg{display:block;
+                margin: 0 auto;}
+    .frenchpresspg ul{
+        margin-bottom: 50px;
+    }
+    .espressopg ul, .frenchpresspg ul, .pouroverpg ul{
+        padding:5px;
+    }
+}
+
+
+
+
+/* Begin Espresso */
+
+.espressopg ul{
+    max-width: 400px;
+    padding:30px;
+    margin-right:50px;
+    font-family: 'Architects Daughter';
+    list-style-type: circle;
+    background-color:#ECAA6E;
+    border-radius: 5%;
+    filter:drop-shadow(2px 2px 2px grey)
+}
+
+
+
+#handle{
+    animation: twist 4s ease-in-out infinite; /* twists espresso cup*/
+    animation-direction: alternate;
+}
+#espresso{
+    animation: espressoshot 4s ease-in-out infinite; /*pours espressp*/
+    animation-direction: alternate; 
+    animation-delay: 1.25s;
+}
+
+
+
+@keyframes twist{
+    0%{transform: translateX(-5px);}
+    10%{transform: translateX(-5px);}
+    90%{transform:translateX(10px);}
+    95%{transform:translateX(10px);}
+    100%{transform: translateX(10px);}    
+    
+}
+
+
+@keyframes espressoshot {
+    0%{transform: translateY(-100px);}
+    90%{transform: translateY(0px);}
+    95%{transform: translateY(0px);}
+    100%{transform: translateY(0px);}
+}
+
+
+
+/* End Espresso */
+
+
+/* Begin French Press */
+
+
+.frenchpresspg ul{
+    max-width: 300px;
+    padding:30px;
+    margin-right:50px;
+    font-family: 'Architects Daughter';
+    list-style-type: circle;
+    background-color:#ECAA6E;
+    border-radius: 5%;
+    filter:drop-shadow(2px 2px 2px grey)
+}
+
+        
+      .cls-1 {
+        fill: #683f03;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #020202;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 10px;
+      }
+
+      .cls-3 {
+        fill: #020202;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 5px;
+      }
+
+      .cls-5 {
+        fill: #bababa;
+      }
+
+#strainer{
+
+    animation: straining 10s ease-in-out infinite; /*push down french press strainer*/
+    
+}
+
+#coffee{
+    opacity:75%;
+}
+
+#grounds{
+    animation: straininggrounds 5s infinite; /*shows grounds being strained and floating back up when not strained*/
+    animation-direction: alternate;
+    
+
+}
+
+@keyframes straining {
+    0%{transform: translateY(-150px);}
+    25%{transform:translateY(-0px);}
+    50%{transform: translateY(5px);}
+    100%{transform: translateY(-150px);}
+}
+
+@keyframes straininggrounds {
+    0%{transform: translateY(-100px);}
+    100%{transform: translateY(-0px)}
+}
+
+
+
+/* End French Press */
+
+
+/* Begin Pour Over */
+
+
+.pouroverpg ul{
+   padding:40px;
+    max-width:350px;
+    margin-right:50px;
+    font-family: 'Architects Daughter';
+    list-style-type: circle;
+    background-color:#ECAA6E;
+    border-radius: 25%;
+    filter:drop-shadow(2px 2px 2px grey)
+}
+
+#water{
+    text-align:center;
+    animation: water 4s ease-in-out infinite; /*pour water */
+    animation-direction: alternate;
+}
+
+@keyframes water{
+    0%{transform:rotate(-0deg) ;}
+    10%{transform:rotate(-0deg) ;}
+    90%{transform: translateY(350px) translateX(-5px)  rotate(-58deg);}
+    95%{transform: translateY(360px) translateX(-5px)  rotate(-62deg);}
+    100%{transform: translateY(360px) translateX(-5px)  rotate(-62deg);}
+}
+
+#coffeedrop{
+    animation: drip 8s ease-in-out infinite; /*coffee drips*/
+    animation-delay: 1s;
+}
+
+@keyframes drip{
+    0%{transform: translateY(-135px);}
+    10%{transform: translateY(-135px);}
+    20%{transform: translateY(-135px);}
+    30%{transform:translateX(-50px) translateY(-135px) ;}
+    40%{transform:translateX(-50px) translateY(-135px) ;}
+    50%{transform: translateX(-50px)translateY(-135px) ;}
+    100%{transform: translateX(-50px);}
+}
+
+/* End Pour Over */
+
